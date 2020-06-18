@@ -2,7 +2,9 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class InteractiveRecord
-
+  def different 
+    "im different than the master for a pull"
+  end
   def self.table_name
     self.to_s.downcase.pluralize
   end
